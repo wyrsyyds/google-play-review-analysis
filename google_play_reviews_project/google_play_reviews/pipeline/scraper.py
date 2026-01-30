@@ -49,7 +49,7 @@ def collect_reviews(app_id, lang, country, target_per_mode, sort_mode, sort_name
                 }
                 all_rows.append(row)
 
-            # only count what we *actually* added toward the target
+            # only count actually added toward the target
             added = min(len(result), target_per_mode - len(all_rows) + len(result))
             pbar.update(min(len(result), target_per_mode - (len(all_rows) - len(result))))
 

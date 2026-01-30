@@ -3,8 +3,7 @@ import pandas as pd
 def basic_clean(df: pd.DataFrame, logger=None) -> pd.DataFrame:
     df = df.copy()
 
-    # Standardize column names (your data already looks consistent)
-    # Ensure expected columns exist
+    # Standardize column names & Ensure expected columns exist
     expected = [
         "review_uid", "user_name", "rating", "review_text",
         "review_date", "thumbs_up", "app_version", "sort_mode", "scrape_time"

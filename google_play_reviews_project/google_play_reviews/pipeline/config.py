@@ -4,8 +4,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]  # google_play_reviews/.. (repo 
 PROJECT_ROOT = REPO_ROOT / "google_play_reviews"
 
 PIPELINE_CONFIG = {
-    # TEMP: use your existing scraped file as input
-    # Replace with your actual path inside repo once you move it.
+    
     "input_csv": str(PROJECT_ROOT / "data" / "raw" / "reviews_latest.csv"),
 
     # Output locations

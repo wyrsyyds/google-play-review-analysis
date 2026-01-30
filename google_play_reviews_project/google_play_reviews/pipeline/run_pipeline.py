@@ -35,7 +35,7 @@ def run_pipeline():
         )
         logger.info(f"[SCRAPE] rows={len(df_raw)} cols={len(df_raw.columns)}")
 
-        # optional: quick per-sort breakdown
+        # quick per-sort breakdown
         if "sort_mode" in df_raw.columns:
             counts = df_raw["sort_mode"].value_counts(dropna=False).to_dict()
             logger.info(f"[SCRAPE_BREAKDOWN] {counts}")
