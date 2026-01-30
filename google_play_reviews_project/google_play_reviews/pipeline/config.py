@@ -1,0 +1,20 @@
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]  # google_play_reviews/.. (repo root)
+PROJECT_ROOT = REPO_ROOT / "google_play_reviews"
+
+PIPELINE_CONFIG = {
+    # TEMP: use your existing scraped file as input
+    # Replace with your actual path inside repo once you move it.
+    "input_csv": str(PROJECT_ROOT / "data" / "raw" / "reviews_latest.csv"),
+
+    # Output locations
+    "raw_out_dir": str(PROJECT_ROOT / "data" / "raw"),
+    "processed_out_dir": str(PROJECT_ROOT / "data" / "processed"),
+    "logs_dir": str(PROJECT_ROOT / "data" /"logs"),
+    "app_id": "com.openai.chatgpt",
+    "lang": "en",
+    "country": "us",
+    "target_per_mode": 300,
+    "use_scraper": True,
+}

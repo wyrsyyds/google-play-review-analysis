@@ -1,0 +1,28 @@
+2026-01-30 13:47:41,239 | INFO | [RUN_START] run_id=20260130_134741_8d3fe221
+2026-01-30 13:47:41,240 | ERROR | [RUN_ERROR] name 'pbar' is not defined
+Traceback (most recent call last):
+  File "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/pipeline/run_pipeline.py", line 67, in <module>
+    run_pipeline()
+  File "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/pipeline/run_pipeline.py", line 29, in run_pipeline
+    df_raw = scrape_reviews(
+  File "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/pipeline/scraper.py", line 71, in scrape_reviews
+    df_mode = collect_reviews(
+  File "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/pipeline/scraper.py", line 19, in collect_reviews
+    pbar.update(min(len(result), target_per_mode - len(all_rows)))
+NameError: name 'pbar' is not defined
+2026-01-30 13:56:40,254 | INFO | [RUN_START] run_id=20260130_135640_b7be3234
+2026-01-30 13:56:40,254 | ERROR | [RUN_ERROR] name 'scrape_reviews' is not defined
+Traceback (most recent call last):
+  File "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/pipeline/run_pipeline.py", line 67, in <module>
+    run_pipeline()
+  File "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/pipeline/run_pipeline.py", line 29, in run_pipeline
+    df_raw = scrape_reviews(
+NameError: name 'scrape_reviews' is not defined
+2026-01-30 13:57:26,682 | INFO | [RUN_START] run_id=20260130_135726_0b687ca9
+2026-01-30 13:57:26,683 | ERROR | [RUN_ERROR] scrape_reviews() got an unexpected keyword argument 'sort_modes'
+Traceback (most recent call last):
+  File "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/pipeline/run_pipeline.py", line 67, in <module>
+    run_pipeline()
+  File "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/pipeline/run_pipeline.py", line 29, in run_pipeline
+    df_raw = scrape_reviews(
+TypeError: scrape_reviews() got an unexpected keyword argument 'sort_modes'

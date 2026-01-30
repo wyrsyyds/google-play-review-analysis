@@ -1,0 +1,23 @@
+{
+  "run_id": "20260130_125455_9369f923",
+  "timestamp": "2026-01-30T12:54:55.215066",
+  "rows_raw": 15873,
+  "rows_processed": 15873,
+  "columns": [
+    "review_uid",
+    "user_name",
+    "rating",
+    "review_text",
+    "review_date",
+    "thumbs_up",
+    "app_version",
+    "sort_mode",
+    "scrape_time"
+  ],
+  "config": {
+    "input_csv": "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/data/raw/reviews_latest.csv",
+    "raw_out_dir": "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/data/raw",
+    "processed_out_dir": "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/data/processed",
+    "logs_dir": "/Users/wyr/data-ingestion-folder/google_play_reviews_project/google_play_reviews/logs"
+  }
+}
