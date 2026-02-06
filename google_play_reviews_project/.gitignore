@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Data (do not commit)
+google_play_reviews/data/raw/
+google_play_reviews/data/processed/
+google_play_reviews/data/logs/
+google_play_reviews/logs/
+

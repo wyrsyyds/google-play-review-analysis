@@ -4,7 +4,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]  # google_play_reviews/.. (repo 
 PROJECT_ROOT = REPO_ROOT / "google_play_reviews"
 
 PIPELINE_CONFIG = {
-    
+
     "input_csv": str(PROJECT_ROOT / "data" / "raw" / "reviews_latest.csv"),
 
     # Output locations
@@ -14,6 +14,6 @@ PIPELINE_CONFIG = {
     "app_id": "com.openai.chatgpt",
     "lang": "en",
     "country": "us",
-    "target_per_mode": 300,
+    "target_per_mode": 2500,
     "use_scraper": True,
 }

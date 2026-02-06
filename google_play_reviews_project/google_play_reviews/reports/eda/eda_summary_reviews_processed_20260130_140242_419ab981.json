@@ -1,0 +1,53 @@
+{
+  "rows": 800,
+  "cols": 13,
+  "review_date_min": "2024-08-31 16:27:58",
+  "review_date_max": "2026-01-29 14:02:17",
+  "rating_counts": {
+    "1": 154,
+    "2": 65,
+    "3": 88,
+    "4": 99,
+    "5": 394
+  },
+  "rating_mean": 3.6425,
+  "rating_median": 4.0,
+  "rating_std": 1.5922823096712828,
+  "word_len_mean": 41.3025,
+  "word_len_median": 44.0,
+  "word_len_p25": 2.0,
+  "word_len_p75": 78.25,
+  "word_len_p95": 94.0,
+  "word_len_max": 110,
+  "pct_very_short_le_3_words": 0.30375,
+  "pct_emoji_or_symbol_only": 0.01125,
+  "missingness_top10": {
+    "app_version": 0.03,
+    "review_uid": 0.0,
+    "user_name": 0.0,
+    "rating": 0.0,
+    "review_text": 0.0,
+    "review_date": 0.0,
+    "thumbs_up": 0.0,
+    "sort_mode": 0.0,
+    "scrape_time": 0.0,
+    "char_len": 0.0
+  },
+  "sort_mode_counts": {
+    "newest": 400,
+    "most_relevant": 400
+  },
+  "app_version_top10": {
+    "1.2026.020": 272,
+    "1.2026.006": 110,
+    "1.2026.013": 84,
+    "1.2025.350": 73,
+    "1.2025.343": 31,
+    "1.2025.336": 26,
+    "MISSING": 24,
+    "1.2025.329": 23,
+    "1.2025.322": 23,
+    "1.2025.308": 22
+  },
+  "pct_app_version_missing": 0.03
+}

@@ -1,0 +1,53 @@
+{
+  "rows": 5200,
+  "cols": 13,
+  "review_date_min": "2024-08-31 16:27:58",
+  "review_date_max": "2026-02-05 17:37:22",
+  "rating_counts": {
+    "1": 853,
+    "2": 287,
+    "3": 412,
+    "4": 631,
+    "5": 3017
+  },
+  "rating_mean": 3.8984615384615386,
+  "rating_median": 5.0,
+  "rating_std": 1.5318876221583753,
+  "word_len_mean": 33.57634615384615,
+  "word_len_median": 25.0,
+  "word_len_p25": 2.0,
+  "word_len_p75": 62.0,
+  "word_len_p95": 90.05000000000018,
+  "word_len_max": 112,
+  "pct_very_short_le_3_words": 0.31596153846153846,
+  "pct_emoji_or_symbol_only": 0.011923076923076923,
+  "missingness_top10": {
+    "app_version": 0.032115384615384615,
+    "review_uid": 0.0,
+    "user_name": 0.0,
+    "rating": 0.0,
+    "review_text": 0.0,
+    "review_date": 0.0,
+    "thumbs_up": 0.0,
+    "sort_mode": 0.0,
+    "scrape_time": 0.0,
+    "char_len": 0.0
+  },
+  "sort_mode_counts": {
+    "newest": 2600,
+    "most_relevant": 2600
+  },
+  "app_version_top10": {
+    "1.2026.027": 1630,
+    "1.2026.020": 772,
+    "1.2026.013": 543,
+    "1.2025.350": 529,
+    "1.2026.006": 455,
+    "1.2025.343": 215,
+    "1.2025.329": 176,
+    "MISSING": 167,
+    "1.2025.336": 159,
+    "1.2025.308": 147
+  },
+  "pct_app_version_missing": 0.032115384615384615
+}
