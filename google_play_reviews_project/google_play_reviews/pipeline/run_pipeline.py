@@ -11,6 +11,8 @@ from .config import PIPELINE_CONFIG
 from .logging_utils import get_logger
 from .processing import basic_clean
 from .storage import save_run_outputs
+from .db import upsert_reviews
+
 
 logger = get_logger()
 
@@ -58,6 +60,16 @@ def run_pipeline():
         config=PIPELINE_CONFIG,
         logger=logger,
     )
+    # 4) Load
+    if PIPELINE_CONFIG.get("load_to_db", False):
+        upsert_reviews(
+            df=df,
+            db_path=PIPELINE_CONFIG["db_path"],
+            app_id=PIPELINE_CONFIG["app_id"],
+            run_id=run_id,
+    )
+        logger.info(f"[DB_LOAD] sqlite db_path={PIPELINE_CONFIG['db_path']} rows={len(df)}")
+
 
     elapsed = time.time() - start_ts
     logger.info(f"[RUN_END] run_id={run_id} duration_sec={elapsed:.2f}")

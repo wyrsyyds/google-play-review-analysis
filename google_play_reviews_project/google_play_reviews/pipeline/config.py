@@ -16,4 +16,9 @@ PIPELINE_CONFIG = {
     "country": "us",
     "target_per_mode": 2500,
     "use_scraper": True,
+
+    # Database config
+    "load_to_db": True,
+    "db_path": str(PROJECT_ROOT / "data" / "db" / "reviews.db"),
 }
+
